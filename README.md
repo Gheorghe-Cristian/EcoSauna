@@ -5,16 +5,16 @@ Landing page pentru **Sauna ECO**, saună pe lemne din Chișinău (str. Calea Or
 ## Structură
 
 ```
-index.html            pagina site-ului (HTML + CSS + JS, fără dependențe)
-assets/img/           logo original, favicon și fotografii reale (Google Maps)
-assets/fonts/         Fraunces și Manrope, găzduite local
+index.html            pagina site-ului, într-un singur fișier: HTML + CSS + JS, cu imaginile și fonturile încorporate (base64)
+assets/img/           sursele imaginilor: logo original, favicon și fotografii reale (Google Maps)
+assets/fonts/         sursele fonturilor Fraunces și Manrope
 design/               exportul inițial al designului (cu text placeholder)
 preview/              tot site-ul într-un singur fișier HTML, pentru previzualizare
 ```
 
 ## Rulare
 
-Se deschide `index.html` direct în browser. Pentru publicare se încarcă `index.html` și `assets/` pe orice hosting static (de exemplu GitHub Pages din ramura `main`, din rădăcină).
+Se deschide `index.html` direct în browser; nu are nevoie de alte fișiere. Pentru publicare ajunge `index.html` pe orice hosting static (de exemplu GitHub Pages din ramura `main`, din rădăcină). Excepție: `og:image` și datele schema.org din `<head>` trimit în continuare la `assets/img/`.
 
 ## De confirmat cu Sauna ECO înainte de publicare
 
